@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <title>TOURISM</title>
+  </head>
+
+  <body>
+    <div id="sectionHome">
+      <div class="bg-container d-flex flex-column justify-content-end">
+        <div class="tourism-card">
+            <h1 class="main-heading">Tourism</h1>
+            <p class="paragraph">Plan your trip whereever you want to go</p>
+            <button class="button" onclick="display('sectionFavouritePlaces')">
+              Get Started
+            </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="sectionFavouritePlaces">
+      <div class="favourite-places-bg-container">
+        <h1 class="favourite-places-heading">
+            Favourite Places
+        </h1>
+        <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajMahaldetailedView')">
+            <div>
+                <h2 class="favourite-place-card-container">
+                    Taj Mahal
+                </h2>
+                <p class="favourite-place-card-description">
+                    If there was justone symbol to represent all of india, it would be the Taj Mahal The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan to house the tomb of his beloved wife, Mumtaz Mahal.
+                </p>
+            </div>
+
+            <img src="taj mahal.avif" class="favourite-place-card-image"/>
+        </div>
+
+        <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionKeraladetailedView')" >
+            <div>
+                <h2 class="favourite-place-card-container">
+                    Kerala
+                </h2>
+                <p class="favourite-place-card-description">
+                    Kerala, India is known for its beaches, backwaters, hill tourism, and ancient art and culture.Kerala, often referred to as "God's Own Country," is a beautiful and unique state located on the southwestern coast of India. It’s known for its stunning landscapes, rich culture, and vibrant history.  
+                </p>
+            </div>
+
+            <img src="kerala.jpeg" class="favourite-place-card-image"/>
+        </div>
+
+        <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionKulluManalidetailedView')">
+            <div>
+                <h2 class="favourite-place-card-container">
+                    Kullu Manali
+                </h2>
+                <p class="favourite-place-card-description">
+                    Manali is a resort town, near Kullu town in Kullu district in the Indian state of Himachal Pradesh.It is situated in the northern end of the Kullu Valley, formed by the Beas River. The town is located in the Kullu district, approximately 270 kilometres (170 mi) north of the state capital of Shimla and 544 kilometres (338 mi) northeast of the national capital of New Delhi.
+                </p>
+            </div>
+
+            <img src="kullu manali.avif" class="favourite-place-card-image"/>
+        </div>
+
+        <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionLahaulValleydetailedView')">
+            <div>
+                <h2 class="favourite-place-card-container">
+                    Lahaul Valley
+                </h2>
+                <p class="favourite-place-card-description">
+                    Lahaul Valley is definitely one of the most beautiful nature destinations in India.Located in Himachal Pradesh, Lahaul Valley stretches across the Manali-Leh route.Lahaul is a landscape of scenic mountains, high summits, massive glaciers, rivers and stunning passes that overlook the valley views.The best thing about Lahaul is that most of the places are motorable. So you can easily and comfortably access some of the most stunning views of the great Himalayas without doing a trek.
+                </p>
+            </div>
+
+            <img src="lahaul valley.webp" class="favourite-place-card-image"/>
+        </div>
+
+        <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionKashmirdetailedView')">
+            <div>
+                <h2 class="favourite-place-card-container">
+                    Kashmir
+                </h2>
+                <p class="favourite-place-card-description">
+                    Kashmir is a picturesque scenery with deep, lush green valleys and unique mountain formations of The Great Himalayas that surround the most brilliant lakes.This region of India should be at the top of every nature enthusiast list to visit.Exploring Kashmir will leave you feeling so enriched and refreshed for life.
+                </p>
+            </div>
+
+            <img src="kashmir.webp" class="favourite-place-card-image"/>
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+
+
+      </div>
+    </div>
+
+
+    <div id="sectionTajMahaldetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">
+            Detailed View
+        </h1>
+
+        <div class="detailed-view-card-container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="taj.webp" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="TajMahal_.jpg" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="taj-mahal1.jpg" class="d-block custom-img" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+            </div>
+
+            <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">Taj Mahal</h1>
+                <p class="detailed-view-card-description">
+                    The Taj Mahal is considered to be the greatest architectural achievement in 
+                    the whole range of Indo-Islamic architecture. It is recognised architectonic
+                    beauty has a rhythmic combination of solids and voids, concave and convex and
+                    light-shadow; such as arches and domes further increases the aesthetic aspect.
+                    Not a piece of architecture, as other buildings are, but the passion of 
+                    an emperor's love wrought in living stones.
+                </p>
+                <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">back</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="sectionKeraladetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">
+            Detailed View
+        </h1>
+
+        <div class="detailed-view-card-container">
+            <div id="keralaExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="keralaExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#keralaExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#keralaExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#keralaExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="kerala2.jpg" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="kerala1.avif" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="kerala3.jpeg" class="d-block custom-img" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#keralaExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#keralaExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+            </div>
+
+            <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">kerala</h1>
+                <p class="detailed-view-card-description">
+                  Kerala is a popular tourist destination in India known for its beaches, backwaters,
+                  hill stations, and wildlife sanctuaries. It's also known as the "God's Own Country".
+                  Kovalam, Muzhappilangad, Bekal, and Kappad are some of the popular beaches in Kerala.
+                  The backwaters of Alappuzha and Kollam are popular for houseboat cruises.
+                  Munnar, Wayanad, Nelliampathi, Vagamon, and Ponmudi are some of the 
+                  hill stations in Kerala.Wayanad, Periyar, Parambikulam, Silent Valley National Park, 
+                  and Eravikulam National Park are some of the wildlife sanctuaries in Kerala 
+                </p>
+                <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">back</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="sectionKulluManalidetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">
+            Detailed View
+        </h1>
+
+        <div class="detailed-view-card-container">
+            <div id="kulluManaliExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="kulluManaliExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#kulluManaliExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#kulluManaliExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#kulluManaliExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="kullumanali1.jpg" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="kullumanali2.jpg" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="kullumanali3.webp" class="d-block custom-img" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#kulluManaliExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#kulluManaliExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+            </div>
+
+            <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">Kullu Manali</h1>
+                <p class="detailed-view-card-description">
+                  Kullu Manali, nestled in the Himalayas of Himachal Pradesh, India, 
+                  is a renowned tourist destination celebrated for its breathtaking natural beauty, 
+                  picturesque valleys, ancient temples, and exciting adventure activities, with Kullu 
+                  particularly known for its religious sites and Manali offering a hub for outdoor pursuits 
+                  like skiing and trekking; making it a perfect getaway for nature lovers and thrill seekers alike. 
+                </p>
+                <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">back</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="sectionLahaulValleydetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">
+            Detailed View
+        </h1>
+
+        <div class="detailed-view-card-container">
+            <div id="lahaulValleyExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="lahaulValleyExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#lahaulValleyExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#lahaulValleyExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#lahaulValleyExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="lahaulvalley2.jpg" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="lahaulvalley1.webp" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="lahaulvalley3.jpg" class="d-block custom-img" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#lahaulValleyExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#lahaulValleyExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+            </div>
+
+            <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">Lahaul Valley</h1>
+                <p class="detailed-view-card-description">
+                  Lahaul Valley, nestled in the Himalayas of Himachal Pradesh, India, is a captivating tourist 
+                  destination renowned for its pristine natural beauty, high-altitude landscapes, ancient Buddhist
+                  monasteries, and unique cultural blend, offering a serene escape for adventure seekers and nature 
+                  enthusiasts, particularly known for its scenic valleys carved by the Chandra and Bhaga rivers, 
+                  snow-capped peaks, glaciers, and traditional Tibetan Buddhist heritage, making it an offbeat yet 
+                  alluring travel spot with opportunities for trekking, mountaineering, and exploring local villages.
+                </p>
+                <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">back</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="sectionKashmirdetailedView">
+      <div class="detailed-view-bg-container">
+        <h1 class="detailed-view-heading">
+            Detailed View
+        </h1>
+
+        <div class="detailed-view-card-container">
+            <div id="kashmirExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="kashmirExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#kashmirExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#kashmirExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#kashmirExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="kashmir1.jpg" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="kashmir2.jpg" class="d-block custom-img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="kashmir3.jpeg" class="d-block custom-img" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#kashmirExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#kashmirExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+
+            </div>
+
+            <div class="detailed-view-card-text-container">
+                <h1 class="detailed-view-card-heading">Kashmir</h1>
+                <p class="detailed-view-card-description">
+                  Kashmir tourism is renowned worldwide for its stunning natural beauty, often referred to as 
+                  the "Paradise on Earth," attracting visitors with its snow-capped mountains, serene lakes 
+                  like Dal Lake, lush valleys, Mughal gardens, and a unique blend of Indian, Persian, 
+                  and Central Asian cultural influences, making it a prime destination for both adventure seekers 
+                  and those seeking tranquility; popular activities include shikara rides, skiing in Gulmarg, 
+                  trekking in Sonmarg, and exploring historical sites like Shalimar Bagh, while the region's rich 
+                  heritage and local crafts further enhance the tourist experience; however, political complexities 
+                  have sometimes impacted tourism, but recent efforts towards peace and improved security are aiming 
+                  to revive Kashmir's potential as a major tourist hub. 
+                </p>
+                <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">back</button>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+
+  </body>
+
+</html>
